@@ -1,0 +1,6 @@
+##코테는 보통 파이썬/노드 등 섞이니까 최소로라도 추가 추천:
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+.env
