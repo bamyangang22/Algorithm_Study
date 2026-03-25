@@ -2,7 +2,8 @@ name: Notion Sync Bot
 
 on:
   push:
-    branches: [ "main" ] # 백준허브가 푸시하는 브랜치명 확인 (보통 main)
+    branches: [ "main" ]
+  workflow_dispatch: # 이 한 줄이 추가되면 깃허브 웹에서 '수동 실행' 버튼이 생깁니다.
 
 jobs:
   sync:
