@@ -1,16 +1,16 @@
 def solution(people, limit):
-    cnt = 0
     left = 0
     right = len(people) - 1
+    cnt = 0
     people.sort()
     while left <= right:
         if(people[left] + people[right] <= limit):
-            cnt += 1
             left += 1
-            right -=1
-        elif(people[left] + people[right] > limit):
+            right -= 1
             cnt += 1
-            right -=1
+        else:
+            right -= 1
+            cnt += 1
     return cnt
 
 # def solution(people, limit):
@@ -32,3 +32,17 @@ def solution(people, limit):
 #         boat_cnt +=1
         
 #     return boat_cnt
+
+# cnt = 0
+#     left = 0
+#     right = len(people) - 1
+#     people.sort()
+#     while left <= right:
+#         if(people[left] + people[right] <= limit):
+#             cnt += 1
+#             left += 1
+#             right -=1
+#         elif(people[left] + people[right] > limit):
+#             cnt += 1
+#             right -=1
+#     return cnt
